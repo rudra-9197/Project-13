@@ -30,13 +30,12 @@ body {
 }
 .rgstr-btn button {
   padding: 0.5rem;
-  position: relative;
-  left: 7rem;
   width: 10rem;
-  background-color: green;
+  background-color: #758283;
   font-size: 20px;
   color: #fff;
-  border: 2px solid black;
+  border: 2px solid white;
+  border-radius: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .container {
@@ -62,36 +61,96 @@ body {
   width: 50rem;
   margin-right: 5rem;
 }
-.sas-sec{
+.sas-sec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sas-img {
+  width: 50rem;
+  margin-left: 3rem;
+}
+
+.sas-items {
+  list-style: none;
+}
+.sas-contnt h2 {
+  font-size: 2rem;
+}
+.sas-item {
+  margin-top: 2rem;
+ list-style-image: url(/image/1564530_arrow_next_share_direction_icon.svg);
+
+}
+
+.sas-item h3 {
+  font-size: 1.5rem;
+  
+}
+.sas-item p {
+  font-size: 1rem;
+  width: 30rem;
+}
+
+#icons{
+    width: 3rem;
+}
+#share{
+
+    width: 3rem;
+}
+.card-sec{
+
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    height: 25rem;
+    margin-bottom: 2rem;
 }
-.sas-img{
-
-    width: 50rem;
-    margin-left: 3rem;
+.head{
+    width: 25rem;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-.sas-items{
-
-    list-style: none;
+.cards{
+display: flex;
 }
-.sas-contnt h2{
-font-size: 2rem;
+.card{
+
+    width: 15rem;
+    height: 18rem;
+    margin-left: 2rem;
+  
+    display: flex;
+   flex-direction: column; 
+   align-items: center;   
+   text-align: center;
+   box-shadow: 10px 10px 20px 0 rgb(179, 177, 177);
+   border-radius: 15px;
 }
-.sas-item{
- margin-top: 2rem;
-
-
-}
-
-.sas-item h3{
+.card h3{
 
     font-size: 1.5rem;
+    margin-top: 20px;
 }
-.sas-item p{
-
-    font-size: 1rem;
-    width: 30rem;
+.card p{
+    font-size: 20px;
+    color: gray;
 }
+.bc-1{
+    background-color: pink;
+    width: 10rem;
+    padding: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 15px;
+}
+.bc-2{
+    margin-top: 15px;
+    background-color: lightcyan;
+    width: 10rem;
+    padding: 2rem;
+    border-radius: 50%;
+    text-align: center;
+}  
