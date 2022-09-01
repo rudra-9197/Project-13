@@ -96,6 +96,9 @@ body {
 #share {
   width: 3rem;
 }
+
+/* cards */
+
 .card-sec {
   display: flex;
   flex-direction: column;
@@ -111,12 +114,12 @@ body {
 }
 .cards {
   display: flex;
+  justify-content: space-around;
 }
 .card {
   width: 15rem;
   height: 18rem;
   margin-left: 2rem;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,31 +152,24 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 900px) and (min-width:200px) {
- *{
-  padding: 0px;
-  margin: 0px;
+@media screen and (max-width: 900px) and (min-width: 200px) {
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
 
- }
- 
- 
- 
   body {
     padding: 0%;
     margin: 0%;
     width: fit-content;
-    border: 5px solid black;
   }
-  .header{
-
+  .header {
     width: 100%;
   }
-  .navbar{
-
+  .navbar {
     width: 100%;
   }
-  .list-items{
-
+  .list-items {
     font-size: 1rem;
   }
 
@@ -181,56 +177,60 @@ body {
     display: none;
   }
 
-  .container{
-   width: 100%;
-   border-bottom-left-radius: 2rem;
-   border-bottom-right-radius: 2rem;
-  
-
+  .container {
+    width: 100%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
   }
 
-  .container-lft{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+  .container-lft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 
-  .container-lft h2{
-  
-   text-align: center;
+  .container-lft h2 {
+    text-align: center;
   }
-  .container-lft p{
+  .container-lft p {
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 30rem;
     text-align: center;
-
   }
 
-
-
-  .sas-sec{
-
+  .sas-sec {
     display: flex;
     flex-direction: column;
     border: 2px solid black;
+    
   }
-.sas-contnt h2{
- font-size: 4rem;
+  .sas-contnt {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 
-}
+  .sas-contnt h2 {
+    font-size: 4rem;
+  }
+  .sas-items{
+
+    text-align: center;
+  }
   .sas-item {
     margin-top: 2rem;
     text-align: center;
-    list-style-image: url(/image/1564530_arrow_next_share_direction_icon.svg);
+
   }
   .sas-item h3 {
     font-size: 5rem;
   }
   .sas-item p {
     font-size: 3rem;
-    width: 50rem;
+    width: fit-content;
+    margin-left: 1rem;
+    margin-right: 1rem;
     text-align: center;
   }
   .card p {
@@ -238,5 +238,8 @@ body {
     color: black;
     font-weight: 500;
   }
-  
+  .card-sec{
+
+    margin-top: 2rem;
+  }
 }
